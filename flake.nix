@@ -1,7 +1,7 @@
 {
   description = "A very basic flake";
   inputs.nixpkgs.url = "github:NixOS/nixpkgs";
-  inputs.py-utils.url = "/home/mcgibbon/projects/python-flake-utils";
+  inputs.py-utils.url = "github:rmcgibbo/python-flake-utils";
   inputs.utils.url = "github:numtide/flake-utils";
 
   outputs = { self, nixpkgs, utils, py-utils }: {
