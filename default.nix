@@ -1,8 +1,7 @@
-{ pkgs ? import <nixpkgs> {}
-, pythonPackages ? pkgs.python38Packages }:
+{ buildPythonPackage }:
 
-pythonPackages.buildPythonPackage rec {
-    pname = "statx";
-    version = "1";
-    src = ./.;
+buildPythonPackage rec {
+  pname = "statx";
+  version = "1";
+  src = ./.;
 }
